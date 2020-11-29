@@ -4,6 +4,7 @@ import static org.junit.Assert.*;
 
 public class StudentTest {
 
+//    This creates a test that creates a student object with an id and name property
     @Test
     public void testCreateStudent() {
         Student fer = new Student(1L, "fer");
@@ -12,6 +13,7 @@ public class StudentTest {
         assertNotNull(fer);
     }
 
+//    This test the student object by getting the assigned properties to that object
     @Test
     public void testStudentFields() {
         Student fer = new Student(1L, "fer");
@@ -21,6 +23,7 @@ public class StudentTest {
     }
 
 
+//    This creates a new student object and adds a grade into the list, and tests by grabbing index
     @Test
     public void testAddGrade() {
         Student fer = new Student(1L, "fer");
@@ -30,6 +33,7 @@ public class StudentTest {
         assertSame(80, fer.getGrades().get(1));
     }
 
+//    creates a new student object and gets the avergae of the two grades
     @Test
     public void testAverageGrade() {
         Student fer = new Student(1L, "fer");

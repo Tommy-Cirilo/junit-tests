@@ -11,22 +11,27 @@ public class Student {
         this.grades = new ArrayList<>();
     }
 
+    //Returns the students id
     public long getId() {
         return this.id;
     }
 
+    //returns the students name
     public String getName() {
         return this.name;
     }
 
+//  returns the list of grades
     public ArrayList<Integer> getGrades() {
         return this.grades;
     }
 
+//    adds the given grade to the grades list
     public void addGrade(int grade) {
         this.grades.add(grade);
     }
 
+//    returns the average of the students grades
     public double getGradeAverage() {
         double sum = 0;
         for (int grade : this.grades) {
